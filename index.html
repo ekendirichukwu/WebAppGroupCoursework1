@@ -31,7 +31,7 @@
                 <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3"
                  v-for="subject in filterLessons()">
 
-                    <div class="product mx-3 my-auto"> <img style="width:250px;height:300px; border-radius:10px;"  v-bind:src="subject.image" alt="">
+                    <div class="product"> <img style="width:250px;height:300px; border-radius:10px;"  v-bind:src="subject.image" alt="">
                     </div>
                     <div class="tag bg-red" v-text="subject.location"></div>
                     <div class="title pt-4 pb-1" v-text="subject.title"></div>
@@ -67,11 +67,7 @@ var webstore = new Vue({
   el: '#app',
   data: {
       showProduct: true,
-      lowHigh: 'Ascending',
       cart: [],
-      searchInput: '',
-      name: "",
-      number: "",
       schools: schools,
   },
   methods: {
