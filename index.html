@@ -39,8 +39,10 @@
                     <p>Spaces: {{subject.availableInventory - cartCount(subject.id)}}</p>
                     <div class="row">
                         <div class="col-12 col-lg-12 col-md-12 col-sm-12">
-                            <button type="button" id="show" data-target="show1" class="show btn btn-primary float-right" aria-label="Left Align" v-on:click="addToCart(subject)" v-if="canAddToCart(subject)"><i class="fa-solid fa-cart-plus"></i> Add to cart</button>
-                      <button disabled="disabled" v-else type="button" id="show" data-target="show1" class="show btn btn-danger float-right" aria-label="Left Align"><i class="fa-solid fa-cart-plus"></i>Empty</button>
+                            <button type="button" id="show" data-target="show1" class="show btn btn-primary float-right" aria-label="Left Align" v-on:click="addToCart(subject)" v-if="canAddToCart(subject)">
+                                <i class="fa-solid fa-cart-plus"></i> Add to cart</button>
+                      <button disabled="disabled" v-else type="button" id="show" data-target="show1" class="show btn btn-danger float-right" aria-label="Left Align">
+                        <i class="fa-solid fa-cart-plus"></i>Empty</button>
                         </div>
                   
                     </div>
